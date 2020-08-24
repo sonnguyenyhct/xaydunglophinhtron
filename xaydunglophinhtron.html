@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xay dung lop hinh tron</title>
+</head>
+<body>
+    <script>
+        let Circle = function (radius) {
+
+            this.radius = radius;
+
+            this.getRadius = function () {
+                return radius;
+            }
+            this.getArea = function () {
+                return Math.PI*radius*radius;
+            }
+        }
+        let circle = new Circle(2);
+        alert("Area : " + circle.getArea() + ", Radius : " + circle.getRadius());
+        let circle2 = new Circle(3);
+        alert("Area : " + circle2.getArea() + ", Radius : " + circle2.getRadius());
+    </script>
+</body>
+</html>
